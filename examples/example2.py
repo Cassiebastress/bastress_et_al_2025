@@ -13,4 +13,4 @@ pwa2 = next(aligner.align(reference_seqr, seq2))
 
 msa = Alignment.from_alignments_with_same_reference([pwa1, pwa2])
 
-print("Multiple sequence alignment with metadata preserved\n", msa)
+print("Multiple sequence alignment:\n", msa)
