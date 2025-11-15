@@ -18,12 +18,12 @@ coords = np.array([
 not_pwa = Alignment([reference_str, seq2_str, seq3_str], coords)
 
 print("Pairwise alignment:")
-print(pwa)
+print(pwa.format("fasta"))
 
 print("\nThree-sequence alignment:")
-print(not_pwa)
+print(not_pwa.format("fasta"))
 
 # multiple sequence alignment
 msa = Alignment.from_alignments_with_same_reference([pwa, not_pwa])
 print("\nCombined multiple sequence alignment:")
-print(msa)
+print(msa.format("fasta"))
