@@ -24,9 +24,17 @@ Install dependencies from inside the virtual env
 pip install -r requirements.txt
 ```
 
+### 3. Installing MARS (for example 3)
+
+To compile MARS, follow the [repository instructions](https://github.com/lorrainea/MARS). For convenience, we provide compiled binaries for macOS and Linux in this [forked release](https://github.com/manulera/MARS/releases/tag/v0.2).
+
 ## Running Example Scripts
+
+Example 1 and 2 contain basic examples on how to combine pairwise alignments to create a multiple sequence alignment.
 ```bash
-python examples/example1.py
-python examples/example2.py
+cd examples
+python example1.py
+python example2.py
+python example3.py # outputs example3-MSA.maf
 ```
 
